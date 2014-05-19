@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+public class PreguntaVoF {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner text = new Scanner (System.in);
+		int Puntaje=0;
+		System.out.println("Quiz: Cultura General");
+		
+		System.out.println("Pregunta 1: Como se llama el Presidente actual de Honduras?");
+	    
+		String presidente;
+	    presidente=text.next();
+	    
+	   if(presidente == ("Juan Orlando Hernandez"))
+	   {
+	       Puntaje=Puntaje+10;
+	       System.out.println("Correcto: Eres todo un Politico!");
+	   }
+	   else
+	   {
+	    System.out.println("Incorrecto: Juan Orlando Hernandez");
+	   }
+
+						
+		System.out.println("Pregunta 3: Cuantos planetas tiene el Sistema Solar?");
+	    int planeta;
+		planeta=text.nextInt();
+	    if(planeta==8)
+	    {
+	        Puntaje=+10;
+	        System.out.println("Correcto: Tienes el conocimiento para ser Astronauta!");
+	    }
+	    else
+	    {
+	    	System.out.println("Incorrecto: el Sistema Solar tiene 8 planetas!");
+	    }
+	}
+
+}

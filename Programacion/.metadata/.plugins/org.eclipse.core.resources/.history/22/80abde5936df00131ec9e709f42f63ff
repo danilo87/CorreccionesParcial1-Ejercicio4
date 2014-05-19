@@ -1,0 +1,110 @@
+import java.util.*;
+public class quiz {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+    
+    
+    //declaro las variable para las respuestas y puntaje y el scanner
+    String novia,hijo_de_vegeta,extra;
+    int hijos,esferas,deseos,puntos=0,krilinp;
+    Scanner e = new Scanner (System.in);
+    
+    /*doy la bienvenida y hago las preguntas y guardo las respuesta
+* a a su ves las comparo con el ciclo if y cada una que esta correcta
+* la variable puntos aumenta un punto
+*/
+    System.out.print("Hola soy goku bienvenido a mi text \n");
+    
+    System.out.print("\npregunta 1 ¿CUantos hijos tiene goku?");
+    hijos=e.nextInt();
+    if(hijos==2){
+        puntos=+1;
+    System.out.print("correcto\n");
+    }else{
+     System.out.print("Incorrecto la respuesta era 2 son gohan y gothens\n");
+    }
+    
+    System.out.print("pregunta 2 ¿Como de llama la novia de goku?");
+    novia=e.next();
+    
+   if(novia.equals("milk")){
+       puntos=puntos+1;
+       
+   System.out.print("correcto\n");
+   }else{
+    System.out.print("Incorrecto la respuesta era milk\n");
+   }
+   
+    System.out.print("¿pregunta 3 ¿Cual es la cantidad de esferas para invocar a shen long?");
+    esferas=e.nextInt();
+    if(esferas==7){
+        puntos=puntos+1;
+        System.out.print("Correcto\n");
+    }else{
+     System.out.print("Incorecto son 7 esferas\n");
+    }
+    
+    System.out.print("pregunta 4 ¿Cuantos deseos cumplen las esferas de namecusei");
+    deseos=e.nextInt();
+    if(deseos==3){
+        puntos=puntos+1;
+        System.out.print("Correcto\n");
+    }else{
+     System.out.print("Incorecto son 3 deseos\n");
+    }
+    
+    System.out.print("pregunta 5 ¿como se llama el hijo de vegeta?");
+    hijo_de_vegeta=e.next();
+
+    if(hijo_de_vegeta.equals("trunks")){
+        puntos=puntos+1;
+        System.out.print("Correcto\n");
+    }else{
+     System.out.print("Incoreccto de llama trunks\n");
+    }
+    
+    System.out.print("pregunta 6 ¿Cuantos puntos tiene krilin en su frente?");
+    krilinp=e.nextInt();
+
+    if(krilinp==6){
+        puntos=puntos+1;
+        System.out.print("Correcto\n");
+    }else{
+     System.out.print("Incoreccto tiene 6 puntos \n");
+    }
+    
+    System.out.print("sus puntos son: "+puntos+"\n\n");
+    
+    
+    
+  // Esta es una pregunta extra para ganar un deseo
+   System.out.print("Has completado el test pero todavia \nhay una pregunta extra con la que ganaras un deseo de shen long \nla quieres contestar ingresa s o n");
+   char p=e.next().charAt(0);
+   if (p=='s'){
+System.out.print("pregunta 7 ¿Cual es el nombre del dragon de namecusehi ?");
+extra=e.next();
+
+if(extra.equals("porunga")){
+puntos=puntos+1;
+System.out.print("Correcto Conoces mucho sobre mi te has ganado un deseo\nguardalo muy bien amigo ");
+System.out.print(" Tus puntos en total fueron: "+puntos);
+}else{
+System.out.print("Incorrecto su nombre es porunga"+" Tus puntos en total fueron: "+puntos+" de 6");
+}
+   }else{
+System.out.print("Tus puntos en total fueron: "+puntos+" de 6");
+   }
+    
+ 
+    
+    
+    
+/*le doy credito a esta paguina http://todojava.awardspace.com/ejemplos-java.html?desc=CompararString
+* y su Autor:Casidiablo , ya que de ahi implemente el equals para comparar las string en el ciclo if
+*/
+
+}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/run/media/alumno/EVA2/Programacion/.metadata/.plugins/org.eclipse.jdt.core
+2698495352.index
+2119688418.index
